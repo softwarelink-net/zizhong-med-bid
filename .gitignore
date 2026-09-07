@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-sitemap
+.DS_Store
+*.local
+.env
+.env.local
+auto-imports.d.ts
+components.d.ts
+.wrangler
+.dev.vars

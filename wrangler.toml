@@ -1,0 +1,34 @@
+# 本仓仅用于 R2 上传鉴权与本站资源绑定参考。
+# 共享入口 Worker 名为 allworld；日常发布请用 `pnpm run deploy`（只写本站 R2 前缀），
+# 切勿随意 `wrangler deploy` 覆盖共享 Worker，以免影响其他站点。
+name = "allworld"
+main = "worker/allworld.js"
+compatibility_date = "2026-09-03"
+compatibility_flags = ["nodejs_compat"]
+account_id = "57df712874237f41c6142eb723be3f21"
+workers_dev = true
+
+[[r2_buckets]]
+binding = "ASSETS_BUCKET"
+bucket_name = "zizhong-med-bid-assets"
+
+[[r2_buckets]]
+binding = "SITES_BUCKET"
+bucket_name = "allworld-sites"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "Allworld"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+APP_NAME = "资中县人民医院医务管理系统"
+PROJECT_SLUG = "zizhong-med-bid"
+REPO_NAME = "zizhong-med-bid"
+SITE_SLUG = "zizhong-med-bid"
+DEPLOYMENT_HOST = "https://zizhong-med-bid.softwarelink.net/"
+HOST_DOMAIN = "https://zizhong-med-bid.softwarelink.net"
+ROOT_DOMAIN = "softwarelink.net"
+SITE_HOST = "https://zizhong-med-bid.softwarelink.net/"
+TABLE_PREFIX = "zzmed_"
+R2_SITE_PREFIX = "allworld-sites/zizhong-med-bid/"

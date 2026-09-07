@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zizhong-med-bid.softwarelink.net/sitemap.xml

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --banner-height: 40px;
+  --brand-primary: #1d4ed8;
+  --brand-primary-dark: #1e40af;
+  --brand-accent: #0ea5e9;
+  --surface: #f1f5f9;
+  --sidebar-width: 240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  background: var(--surface);
+  color: #0f172a;
+}
+
+body {
+  padding-top: var(--banner-height);
+}
+
+a {
+  color: inherit;
+}
+
+.page-card {
+  @apply bg-white rounded-xl shadow-sm border border-slate-100 p-5;
+}
+
+.page-title {
+  @apply text-xl font-semibold text-slate-800 mb-1;
+}
+
+.page-subtitle {
+  @apply text-sm text-slate-500 mb-4;
+}
