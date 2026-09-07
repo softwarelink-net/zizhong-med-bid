@@ -22,7 +22,7 @@
           </RouterLink>
         </nav>
         <div class="border-t border-slate-700 p-4 text-xs text-slate-400">
-          Demo / Reference Implementation
+          zizhong-med-bid
         </div>
       </aside>
 
