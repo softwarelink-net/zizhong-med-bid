@@ -1,6 +1,6 @@
 # 资中县人民医院医务管理系统
 
-![控制台预览](docs/assets/dashboard-preview.png)
+![控制台预览](https://raw.githubusercontent.com/softwarelink-net/zizhong-med-bid/main/docs/assets/dashboard-preview.png?v=5afd1e2d)
 
 ## 上线主域名 Host
 https://zizhong-med-bid.softwarelink.net/
